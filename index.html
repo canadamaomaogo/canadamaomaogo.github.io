@@ -18,9 +18,10 @@ function showInfo(data, tabletop) {
 console.log(data);
 for (var i = 0; i < data.length; i++) {
 $(‘.post’).append(
-'<div class=”text”>' +
+'<div class="text">' +
 '<h1>' + data[i].Site-Name + '</h1>'+
-data[i].City +
+  +data[i].Address + 
+data[i].City + data[i].Prov
 '</div>' );
 }
 }
