@@ -1,11 +1,11 @@
 <html>
 <body>
 <title>Shell car wash</title>
-<div class=”post”>
+<div class="post">
 </div>
 <script>
 function init() {
-Tabletop.init( { key: ‘198HS_8FJbZhASXbJ7hfJV-iux563hd6gg7joNYJ6X9k’,
+Tabletop.init( { key: '2PACX-1vRv90fVxfiEWs8eMRK8rtP1A_W4BiVOiFJcaSCfgSXyCmfvBI3-XGH7Amup304g_5cONbNjpB3JGTlg',
 callback: showInfo,
 simpleSheet: true } )
 }
@@ -13,18 +13,13 @@ function showInfo(data, tabletop) {
 console.log(data);
 for (var i = 0; i < data.length; i++) {
 $(‘.post’).append(
-‘<div class=”article” style=”background-image: url( ‘ +
-data[i].img + ‘.jpg)”>’ +
-‘<div class=”text”>’ +
-‘<h1>’ + data[i].title + ‘</h1>’+
-data[i].body +
-‘</div> ‘ + ‘<div class=”meta-info”>’ + ‘<img src =”’ + data[i].img + ‘.jpg”>’+
-‘<div class=”date”>’ + data[i].date + ‘</div>’ +
-‘</div>’ +
-‘</div>’);
+'<div class=”text”>' +
+'<h1>' + data[i].Site-Name + '</h1>'+
+data[i].City +
+'</div>' );
 }
 }
-window.addEventListener(‘DOMContentLoaded’, init)
+window.addEventListener('DOMContentLoaded', init)
 </script>
 </body>
 </html
