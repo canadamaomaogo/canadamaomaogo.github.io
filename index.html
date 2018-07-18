@@ -6,16 +6,16 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRv90fVxfiEWs8eMRK8rtP1A_W4BiVOiFJcaSCfgSXyCmfvBI3-XGH7Amup304g_5cONbNjpB3JGTlg/pubhtml';
-function init() {
+
+  function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: showInfo,
                      simpleSheet: true } )
   }
-  
-function showInfo(data, tabletop) {
+
+  function showInfo(data, tabletop) {
   alert('Successfully processed!')
   console.log(data);
-
   for (var i = 0; i < data.length; i++) {
     $(‘.post’).append(
 
@@ -26,8 +26,7 @@ function showInfo(data, tabletop) {
       '</div>' );
   }
 }
-  
 window.addEventListener('DOMContentLoaded', init)
 </script>
 </body>
-</html
+</html>
