@@ -12,7 +12,70 @@
 </form>
 <script>
 $(document).ready(function() {
-$('#tipue_search_input').tipuesearch();
+$('#tipue_search_input').tipuesearch({
+
+// The number of characters displayed before the search term in context, if showContext is true. 
+'contextBuffer': 60,
+
+// The minimum number of characters displayed if showContext is true. 
+'contextLength' : 60,
+
+// The starting position in the descriptive text before the search term is shown in context, if showContext is true. 
+'contextStart' : 90,
+
+// The number of results displayed.
+'show': 7, 
+
+// Results open in a new browser tab if set to true.
+'newWindow': false, 
+
+// The search term is shown in context in the descriptive text if set to true. 
+'showContext': true,
+
+// Shows related items
+'showRelated' true,
+
+// The time taken for the search to complete is displayed in tenths of a second. 
+'showTime': true,
+
+// The URL is displayed in each search result if set to true. 
+'showURL': true, 
+
+// The number of search results is displayed in the document title if set to true. 
+'showTitleCount': true,
+
+// The minimum length of characters in a search query. 
+'minimumLength'  : 3, 
+
+// The number of words displayed in the descriptive text in the search results. 
+'descriptiveWords'   : 25, 
+
+// Search terms are highlighted if set to true.
+'highlightTerms' : true, 
+
+// Every occurrence of search terms are highlighted if set to true.
+'highlightEveryTerm' : false, 
+
+// The mode for loading content. 
+// The value can be 'static', 'live' or 'json'. 
+'mode': 'static', 
+
+// n Live mode, the element containing the descriptive text.
+'liveDescription': '*', 
+
+// In Live mode, the element containing the content to be searched.
+'liveContent': '*', 
+
+// The location for the JSON file if using JSON mode.
+'contentLocation': 'tipuesearch/tipuesearch_content.json', 
+
+// Debug mode
+'debug' : false,
+
+// Searches for whole words if set to true. 
+'wholeWords': true
+
+});
 });
 </script>
 </body>
