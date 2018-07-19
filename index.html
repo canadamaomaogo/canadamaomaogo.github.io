@@ -20,9 +20,11 @@
   for (var i = 0; i < data.length; i++) {
     $('.post').append(
       '<div class="text">' +
-      '<h1>' + data[i].RBU + '</h1>'+  
-      +data[i].Address +
-      data[i].City + data[i].Prov +
+      '<h1>' + data[i].RBU + '</h1>'+ 
+      '<h2>' + data[i].SiteName + '</h>'+ 
+      +data[i].Address + '<br>'
+      data[i].City + '&nbsp'
+      + data[i].Prov +
       '</div>' );
   }
 }
